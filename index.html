@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cartilha de Cibersegurança na Terceira Idade</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ACESSIBILIDADE -->
+<div class="accessibility-tools">
+
+  <button id="increaseFont" class="access-btn" aria-label="Aumentar fonte">
+    <i class="bi bi-zoom-in"></i>
+  </button>
+
+  <button id="decreaseFont" class="access-btn" aria-label="Diminuir fonte">
+    <i class="bi bi-zoom-out"></i>
+  </button>
+
+  <button id="readSite" class="access-btn access-btn-read" aria-label="Ler site em voz alta">
+    <i class="bi bi-volume-up-fill"></i>
+  </button>
+
+  <button id="stopReading" class="access-btn access-btn-stop" aria-label="Parar leitura">
+    <i class="bi bi-stop-fill"></i>
+  </button>
+
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top custom-navbar">
+  <div class="container">
+
+    <a class="navbar-brand fw-bold" href="#">
+      <i class="bi bi-shield-lock-fill me-2" style="color:#60a5fa"></i>CyberIdosos
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#problema">Problema</a></li>
+        <li class="nav-item"><a class="nav-link" href="#objetivos">Objetivos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#metodologia">Metodologia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#golpes">Golpes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cartilha">Cartilha</a></li>
+        <li class="nav-item"><a class="nav-link" href="#questionario">Questionário</a></li>
+        <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="inicio" class="hero-section">
+
+  <div class="hero-overlay"></div>
+
+  <div class="container position-relative z-1">
+    <div class="row align-items-center min-vh-100">
+
+      <div class="col-lg-6">
+
+        <span class="hero-badge">
+          <i class="bi bi-mortarboard-fill me-2"></i>Projeto Integrado • Engenharia da Computação
+        </span>
+
+        <h1 class="hero-title mt-4">
+          Cartilha de
+          <span class="gradient-text">Cibersegurança</span>
+          na Terceira Idade
+        </h1>
+
+        <p class="hero-text mt-4">
+          Projeto acadêmico desenvolvido na UNIFEV com foco na conscientização
+          digital de idosos para prevenção de golpes virtuais, fraudes online
+          e engenharia social.
+        </p>
+
+        <div class="hero-buttons mt-5">
+          <a href="#sobre" class="btn btn-primary btn-lg custom-btn">
+            <i class="bi bi-arrow-down-circle me-2"></i>Explorar Projeto
+          </a>
+          <a href="#cartilha" class="btn btn-outline-light btn-lg custom-btn-outline">
+            <i class="bi bi-book me-2"></i>Ver Cartilha
+          </a>
+        </div>
+
+        <div class="hero-stats mt-5">
+          <div class="stat-box">
+            <h3>18+</h3>
+            <p>Golpes Analisados</p>
+          </div>
+          <div class="stat-box">
+            <h3>100%</h3>
+            <p>Projeto Educacional</p>
+          </div>
+          <div class="stat-box">
+            <h3>UNIFEV</h3>
+            <p>Eng. Computação</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-lg-6 text-center mt-5 mt-lg-0">
+        <!-- Ilustração SVG integrada — substitua por img src="imagens/idoso-tecnologia.jpg" se preferir -->
+        <div class="hero-illustration">
+          <svg viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-image w-100">
+            <circle cx="210" cy="190" r="170" fill="rgba(59,130,246,0.07)"/>
+            <circle cx="210" cy="190" r="130" fill="rgba(59,130,246,0.06)"/>
+            <!-- Tela do dispositivo -->
+            <rect x="100" y="80" width="220" height="160" rx="18" fill="#1e293b" stroke="#3b82f6" stroke-width="2"/>
+            <rect x="110" y="92" width="200" height="136" rx="10" fill="#0f172a"/>
+            <!-- Conteúdo na tela -->
+            <rect x="125" y="108" width="80" height="10" rx="5" fill="#60a5fa"/>
+            <rect x="125" y="124" width="120" height="6" rx="3" fill="#334155"/>
+            <rect x="125" y="136" width="100" height="6" rx="3" fill="#334155"/>
+            <rect x="125" y="150" width="60" height="24" rx="8" fill="#2563eb"/>
+            <!-- Escudo centralizado -->
+            <circle cx="270" cy="148" r="28" fill="#1d4ed8" opacity="0.9"/>
+            <path d="M270 130 L285 137 V148 C285 157 278 163 270 166 C262 163 255 157 255 148 V137 Z" fill="#60a5fa"/>
+            <path d="M263 148 L268 153 L278 143" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <!-- Pessoa -->
+            <circle cx="210" cy="295" r="22" fill="#334155" stroke="#475569" stroke-width="1.5"/>
+            <circle cx="210" cy="283" r="10" fill="#94a3b8"/>
+            <path d="M192 308 Q210 300 228 308" fill="#334155" stroke="#475569" stroke-width="1"/>
+            <!-- Alertas flutuantes -->
+            <rect x="55" y="140" width="36" height="36" rx="10" fill="#ef4444" opacity="0.9"/>
+            <text x="73" y="163" text-anchor="middle" font-size="20" fill="white">!</text>
+            <rect x="325" y="100" width="36" height="36" rx="10" fill="#f59e0b" opacity="0.9"/>
+            <text x="343" y="123" text-anchor="middle" font-size="18" fill="white">?</text>
+            <rect x="340" y="180" width="36" height="36" rx="10" fill="#10b981" opacity="0.9"/>
+            <text x="358" y="203" text-anchor="middle" font-size="16" fill="white">✓</text>
+            <!-- Base -->
+            <rect x="155" y="242" width="110" height="14" rx="6" fill="#1e293b"/>
+            <rect x="175" y="255" width="70" height="8" rx="4" fill="#334155"/>
+            <!-- Ondas de conexão -->
+            <path d="M190 340 Q210 330 230 340" stroke="#3b82f6" stroke-width="2" fill="none" opacity="0.5"/>
+            <path d="M175 352 Q210 338 245 352" stroke="#3b82f6" stroke-width="1.5" fill="none" opacity="0.35"/>
+            <path d="M160 364 Q210 346 260 364" stroke="#3b82f6" stroke-width="1" fill="none" opacity="0.2"/>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- SOBRE -->
+<section id="sobre" class="section-padding">
+  <div class="container">
+    <div class="row align-items-center g-5">
+
+      <div class="col-lg-6">
+  <div class="sobre-image-wrapper">
+    <img src="imagens/idoso-tecnologia.jpg"
+         class="img-fluid rounded-4 shadow-lg floating-about-image"
+         alt="Idosos utilizando tecnologia">
+  </div>
+</div>
+
+      <div class="col-lg-6">
+        <span class="section-subtitle">SOBRE O PROJETO</span>
+        <h2 class="section-title">
+          Educação digital como ferramenta de proteção.
+        </h2>
+        <p class="section-text">
+          O projeto <strong>"Cartilha de Cibersegurança na Terceira Idade"</strong>
+          foi desenvolvido pelos alunos do curso de Engenharia da
+          Computação da UNIFEV com o objetivo de conscientizar idosos
+          sobre golpes virtuais e riscos digitais.
+        </p>
+        <p class="section-text">
+          A proposta reúne pesquisas acadêmicas, análise de golpes,
+          engenharia social e desenvolvimento de material educativo
+          acessível para auxiliar idosos no uso seguro da internet.
+        </p>
+
+        <div class="row mt-4">
+          <div class="col-md-6">
+            <div class="info-card">
+              <i class="bi bi-shield-lock"></i>
+              <h5>Conscientização</h5>
+              <p>Educação digital voltada à prevenção de fraudes online.</p>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="info-card">
+              <i class="bi bi-people"></i>
+              <h5>Impacto Social</h5>
+              <p>Inclusão digital segura para a terceira idade.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROBLEMA -->
+<section id="problema" class="dark-section section-padding">
+  <div class="container text-center">
+
+    <span class="section-subtitle">O PROBLEMA</span>
+    <h2 class="section-title text-white">Crescimento dos golpes digitais.</h2>
+
+    <div class="row g-4 mt-2 text-start">
+
+      <div class="col-lg-3">
+        <div class="problem-card">
+          <i class="bi bi-phone"></i>
+          <h4>Golpes Virtuais</h4>
+          <p>Crescimento de fraudes por telefone, WhatsApp e internet. Em 2023, idosos representaram 35% das vítimas de fraudes digitais no Brasil.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="problem-card">
+          <i class="bi bi-person-exclamation"></i>
+          <h4>Vulnerabilidade</h4>
+          <p>Idosos se tornam alvos frequentes de engenharia social por menor familiaridade com tecnologia e maior confiança em desconhecidos.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="problem-card">
+          <i class="bi bi-cash-stack"></i>
+          <h4>Impacto Financeiro</h4>
+          <p>Perdas financeiras causadas por golpes digitais chegam a bilhões por ano no Brasil, com idosos entre os mais afetados.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-3">
+        <div class="problem-card">
+          <i class="bi bi-heartbreak"></i>
+          <h4>Impacto Emocional</h4>
+          <p>Medo, insegurança e danos psicológicos às vítimas. Muitos deixam de usar a internet por medo, perdendo autonomia.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- OBJETIVOS -->
+<section id="objetivos" class="section-padding">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="section-subtitle">OBJETIVOS</span>
+      <h2 class="section-title">Promover segurança digital.</h2>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4">
+        <div class="objective-card">
+          <i class="bi bi-shield-check"></i>
+          <h4>Prevenção</h4>
+          <p>Reduzir riscos digitais através da informação e da conscientização. Ensinar a reconhecer situações de risco antes que o dano ocorra.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="objective-card">
+          <i class="bi bi-book"></i>
+          <h4>Educação</h4>
+          <p>Ensinar idosos a identificar golpes online com linguagem acessível, exemplos práticos e material visual de fácil compreensão.</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="objective-card">
+          <i class="bi bi-globe"></i>
+          <h4>Inclusão Digital</h4>
+          <p>Incentivar o uso seguro e confiante da tecnologia, para que o idoso possa acessar serviços, comunicar-se e participar do mundo digital.</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- METODOLOGIA -->
+<section id="metodologia" class="section-padding bg-light">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="section-subtitle">METODOLOGIA</span>
+      <h2 class="section-title">Trajetória do Projeto</h2>
+    </div>
+
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="bi bi-search"></i></div>
+        <h4>Pesquisa dos Quartetos</h4>
+        <p>Levantamento inicial dos principais tipos de golpes digitais voltados a idosos no Brasil.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="bi bi-diagram-3"></i></div>
+        <h4>Consolidação</h4>
+        <p>União e organização das informações pesquisadas pelos grupos, eliminando redundâncias e priorizando os mais relevantes.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="bi bi-pencil-square"></i></div>
+        <h4>Desenvolvimento</h4>
+        <p>Criação da cartilha educativa e deste site com linguagem acessível, exemplos práticos e design inclusivo.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="bi bi-clipboard-check"></i></div>
+        <h4>Questionários</h4>
+        <p>Aplicação de questionários antes e depois da leitura da cartilha para medir a evolução na conscientização dos participantes.</p>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon"><i class="bi bi-bar-chart-line"></i></div>
+        <h4>Análise</h4>
+        <p>Avaliação da efetividade educativa com base nos dados coletados e elaboração das conclusões do projeto.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- GOLPES -->
+<section id="golpes" class="section-padding">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="section-subtitle">PRINCIPAIS GOLPES</span>
+      <h2 class="section-title">Fraudes analisadas no projeto</h2>
+      <p class="section-text mx-auto" style="max-width:600px">
+        Conheça os golpes mais comuns que afetam idosos no Brasil e saiba como se proteger.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-envelope-exclamation"></i></div>
+          <h5>Phishing</h5>
+          <p>Links falsos enviados por e-mail ou mensagem que imitam bancos, Correios ou governo para roubar dados pessoais e senhas.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Nunca clique em links recebidos por mensagem. Acesse sempre digitando o endereço no navegador.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-whatsapp"></i></div>
+          <h5>WhatsApp Clonado</h5>
+          <p>Criminosos assumem o controle do WhatsApp da vítima ou criam um perfil falso fingindo ser filho, neto ou amigo pedindo dinheiro urgente.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Ligue para o familiar no número que você já conhece para confirmar antes de qualquer transferência.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-bank2"></i></div>
+          <h5>Falsa Central Bancária</h5>
+          <p>Alguém liga se passando por funcionário do banco dizendo que sua conta foi comprometida e pede senha, código ou que você entregue o cartão.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Bancos jamais pedem senhas por telefone. Desligue e ligue para o número do cartão.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-gift"></i></div>
+          <h5>Falso Prêmio</h5>
+          <p>Mensagens afirmando que você ganhou um prêmio ou sorteio e pedindo um pagamento de taxa ou imposto para liberar o valor.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Sorteios legítimos nunca pedem pagamento. Ignore e exclua a mensagem.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-person-badge"></i></div>
+          <h5>Golpe do INSS / Gov</h5>
+          <p>Criminosos fingem ser servidores do INSS ou governo e pedem dados cadastrais, senha do Gov.br ou solicitam pagamento de taxas inexistentes.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Procure pessoalmente uma agência do INSS ou acesse o site oficial em meu.inss.gov.br.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-phone-vibrate"></i></div>
+          <h5>Golpe do Motoboy</h5>
+          <p>Após uma ligação falsa do banco, alguém vai até sua casa buscar seu cartão e senha. Nenhum banco faz isso — é sempre golpe.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Nunca entregue seu cartão a ninguém. Em caso de suspeita, ligue para o número do banco.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-laptop"></i></div>
+          <h5>Suporte Técnico Falso</h5>
+          <p>Alguém liga dizendo que seu computador ou celular está com vírus e pede para instalar um aplicativo de "acesso remoto" para corrigir.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Nunca instale aplicativos enviados por desconhecidos. Consulte um técnico de confiança.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-heart-pulse"></i></div>
+          <h5>Golpe Sentimental</h5>
+          <p>Perfis falsos em redes sociais ou aplicativos criam relacionamentos afetivos para depois pedir dinheiro com histórias de urgência médica ou acidente.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Desconfie de pessoas conhecidas só online que pedem dinheiro. Consulte um familiar.</div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6">
+        <div class="scam-card">
+          <div class="scam-icon-wrap"><i class="bi bi-qr-code-scan"></i></div>
+          <h5>Golpe do PIX / QR Code</h5>
+          <p>QR codes falsos ou links de pagamento manipulados que redirecionam o PIX para criminosos ao invés do destinatário correto.</p>
+          <div class="scam-tip"><i class="bi bi-lightbulb-fill me-1"></i> Sempre confirme o nome do destinatário antes de finalizar um PIX. Desconfie de QR codes enviados por mensagem.</div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- QUESTIONÁRIO -->
+<section id="questionario" class="section-padding">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="section-subtitle">QUESTIONÁRIO</span>
+      <h2 class="section-title">Você reconhece um golpe?</h2>
+      <p class="section-text mx-auto" style="max-width:600px">
+        Responda as perguntas abaixo e descubra o quanto você já sabe sobre proteção digital. Não há respostas certas ou erradas na avaliação — apenas honestidade!
+      </p>
+    </div>
+
+    <!-- PARTE 1: ANTES -->
+    <div class="quiz-block mb-5" id="bloco-antes">
+      <div class="quiz-block-header">
+        <span class="quiz-block-badge badge-antes">Parte 1 — Antes da Cartilha</span>
+        <h3>O que você já sabia?</h3>
+      </div>
+
+      <div class="quiz-form" id="form-antes">
+
+        <div class="question-item" data-q="a1">
+          <p class="question-text">1. Você já ouviu falar sobre golpes digitais antes de acessar este site?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="a1" value="sim"> Sim, já ouvi bastante</label>
+            <label class="option-label"><input type="radio" name="a1" value="pouco"> Ouvi um pouco</label>
+            <label class="option-label"><input type="radio" name="a1" value="nao"> Não, nunca ouvi falar</label>
+          </div>
+        </div>
+
+        <div class="question-item" data-q="a2">
+          <p class="question-text">2. Se recebesse um link no WhatsApp de um número desconhecido, você clicaria?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="a2" value="nao"> Não, com certeza não</label>
+            <label class="option-label"><input type="radio" name="a2" value="talvez"> Dependeria do conteúdo</label>
+            <label class="option-label"><input type="radio" name="a2" value="sim"> Sim, eu abriria para ver</label>
+          </div>
+        </div>
+
+        <div class="question-item" data-q="a3">
+          <p class="question-text">3. Se o banco ligasse pedindo o código SMS para "proteger sua conta", você passaria?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="a3" value="nao"> Não, sei que isso é golpe</label>
+            <label class="option-label"><input type="radio" name="a3" value="talvez"> Ficaria em dúvida</label>
+            <label class="option-label"><input type="radio" name="a3" value="sim"> Sim, para proteger minha conta</label>
+          </div>
+        </div>
+
+        <div class="question-item" data-q="a4">
+          <p class="question-text">4. Recebeu uma mensagem dizendo que ganhou R$5.000 e precisa pagar R$50 de taxa. O que faria?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="a4" value="nao"> Ignoraria — é claramente golpe</label>
+            <label class="option-label"><input type="radio" name="a4" value="talvez"> Perguntaria para alguém antes</label>
+            <label class="option-label"><input type="radio" name="a4" value="sim"> Pagaria, porque o prêmio vale mais</label>
+          </div>
+        </div>
+
+        <div class="question-item" data-q="a5">
+          <p class="question-text">5. Você sabe ativar a verificação em duas etapas no WhatsApp?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="a5" value="sim"> Sim, já tenho ativada</label>
+            <label class="option-label"><input type="radio" name="a5" value="talvez"> Já ouvi falar, mas não fiz</label>
+            <label class="option-label"><input type="radio" name="a5" value="nao"> Não sabia que isso existia</label>
+          </div>
+        </div>
+
+        <button class="btn-quiz-submit" onclick="submeterQuiz('antes')">
+          <i class="bi bi-check2-circle me-2"></i>Enviar respostas da Parte 1
+        </button>
+
+      </div>
+
+      <div class="quiz-result-box" id="resultado-antes" style="display:none"></div>
+    </div>
+
+<!-- CARTILHA -->
+<section id="cartilha" class="dark-section section-padding">
+  <div class="container">
+
+    <div class="text-center mb-5">
+      <span class="section-subtitle">CARTILHA</span>
+      <h2 class="section-title text-white">Material Educativo</h2>
+      <p class="text-secondary mx-auto" style="max-width:600px; font-size:1.1rem">
+        Regras de ouro para se proteger no mundo digital. Leia com calma e compartilhe com quem você ama.
+      </p>
+    </div>
+
+    <div class="row g-4">
+
+      <div class="col-lg-6">
+        <div class="cartilha-card">
+          <div class="cartilha-number">01</div>
+          <h4><i class="bi bi-key-fill me-2 text-warning"></i>Proteja sua senha</h4>
+          <ul>
+            <li>Nunca diga sua senha a ninguém, nem para familiares.</li>
+            <li>Não use datas de aniversário ou sequências como 1234.</li>
+            <li>Troque suas senhas a cada 6 meses.</li>
+            <li>Uma senha forte tem letras, números e símbolos.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="cartilha-card">
+          <div class="cartilha-number">02</div>
+          <h4><i class="bi bi-message-x-fill me-2 text-danger"></i>Cuidado com mensagens</h4>
+          <ul>
+            <li>Mensagens com urgência e pedido de dinheiro são quase sempre golpe.</li>
+            <li>Erros de português são sinal de alerta.</li>
+            <li>Não responda mensagens pedindo dados pessoais ou bancários.</li>
+            <li>Desconfie de promoções muito boas para ser verdade.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="cartilha-card">
+          <div class="cartilha-number">03</div>
+          <h4><i class="bi bi-telephone-x-fill me-2 text-info"></i>Ligações suspeitas</h4>
+          <ul>
+            <li>Bancos nunca pedem senha, código ou cartão por telefone.</li>
+            <li>Nenhum banco envia motoboy buscar seu cartão.</li>
+            <li>Desligue e ligue de volta pelo número do cartão para confirmar.</li>
+            <li>Se sentir pressão ou urgência, é golpe — desligue.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="cartilha-card">
+          <div class="cartilha-number">04</div>
+          <h4><i class="bi bi-wifi-off me-2 text-success"></i>Segurança no celular</h4>
+          <ul>
+            <li>Não instale aplicativos enviados por mensagem ou link.</li>
+            <li>Mantenha o celular e aplicativos sempre atualizados.</li>
+            <li>Evite usar Wi-Fi público para acessar banco ou e-mail.</li>
+            <li>Ative a verificação em duas etapas no WhatsApp.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="cartilha-card">
+          <div class="cartilha-number">05</div>
+          <h4><i class="bi bi-cash-coin me-2 text-warning"></i>Antes de pagar</h4>
+          <ul>
+            <li>Confirme o nome do destinatário antes de finalizar qualquer PIX.</li>
+            <li>Nunca pague taxas para receber prêmios ou benefícios.</li>
+            <li>Não faça pagamentos sob pressão ou urgência.</li>
+            <li>Consulte um familiar antes de qualquer transação fora do normal.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="cartilha-card cartilha-card--highlight">
+          <div class="cartilha-number">⭐</div>
+          <h4><i class="bi bi-people-fill me-2"></i>Regra de ouro</h4>
+          <p class="cartilha-highlight-text">
+            Na dúvida, <strong>não faça nada.</strong>
+            Pare, respire e fale com um familiar ou amigo de confiança antes de clicar, pagar ou fornecer qualquer dado.
+            Golpistas sempre criam urgência — mas você tem todo o direito de esperar.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <!-- Coloque o PDF na pasta documentos/ -->
+      <a href="documentos/cartilha.pdf" target="_blank" class="btn btn-primary btn-lg custom-btn">
+        <i class="bi bi-file-earmark-pdf me-2"></i>Baixar Cartilha Completa em PDF
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+
+    <!-- PARTE 2: APÓS CARTILHA -->
+    <div class="quiz-block" id="bloco-depois">
+      <div class="quiz-block-header">
+        <span class="quiz-block-badge badge-depois">Parte 2 — Após a Cartilha</span>
+        <h3>O que você aprendeu?</h3>
+      </div>
+
+      <div class="quiz-form" id="form-depois">
+
+        <div class="question-item" data-q="d1">
+          <p class="question-text">1. Qual destas situações é um golpe com certeza?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="d1" value="c"> O banco liga pedindo sua senha para desbloquear a conta.</label>
+            <label class="option-label"><input type="radio" name="d1" value="a"> Seu gerente pede que você vá à agência com documento.</label>
+            <label class="option-label"><input type="radio" name="d1" value="b"> O banco envia extrato por e-mail cadastrado.</label>
+          </div>
+        </div>
+
+        <div class="question-item" data-q="d2">
+          <p class="question-text">2. Você recebe um PIX para confirmar, mas o nome do destinatário é estranho. O que você faz?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="d2" value="a"> Cancelo e consulto o destinatário correto antes de qualquer transferência.</label>
+            <label class="option-label"><input type="radio" name="d2" value="b"> Pago mesmo assim, porque deve ser um apelido.</label>
+            <label class="option-label"><input type="radio" name="d2" value="c"> Ligo para o banco pedindo ajuda imediatamente.</label>
+          </div>
+        </div>
+
+        <div class="question-item" data-q="d3">
+          <p class="question-text">3. Um "técnico" manda mensagem dizendo que seu celular tem vírus e pede para você instalar um app. O que é correto?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="d3" value="a"> Instalar o app rapidamente para proteger o celular.</label>
+            <label class="option-label"><input type="radio" name="d3" value="b"> Não instalar nada e consultar um técnico ou familiar de confiança.</label>
+            <label class="option-label"><input type="radio" name="d3" value="c"> Responder a mensagem pedindo mais informações.</label>
+          </div>
+        </div>
+
+        <div class="question-item" data-q="d4">
+          <p class="question-text">4. Qual destas é uma boa prática de segurança digital?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="d4" value="a"> Usar a mesma senha em todos os aplicativos para não esquecer.</label>
+            <label class="option-label"><input type="radio" name="d4" value="b"> Ativar a verificação em duas etapas no WhatsApp e nos apps do banco.</label>
+            <label class="option-label"><input type="radio" name="d4" value="c"> Compartilhar a senha com um familiar de confiança como backup.</label>
+          </div>
+        </div>
+
+        <div class="question-item" data-q="d5">
+          <p class="question-text">5. Qual é a regra mais importante ao receber uma mensagem pedindo transferência urgente?</p>
+          <div class="question-options">
+            <label class="option-label"><input type="radio" name="d5" value="a"> Fazer logo para não perder a janela de tempo.</label>
+            <label class="option-label"><input type="radio" name="d5" value="b"> Ligar para o número que a mensagem fornece para confirmar.</label>
+            <label class="option-label"><input type="radio" name="d5" value="c"> Parar, não fazer nada, e ligar para a pessoa no número que você já conhece.</label>
+          </div>
+        </div>
+
+        <button class="btn-quiz-submit" onclick="submeterQuiz('depois')">
+          <i class="bi bi-check2-circle me-2"></i>Enviar respostas da Parte 2
+        </button>
+
+      </div>
+
+      <div class="quiz-result-box" id="resultado-depois" style="display:none"></div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- EQUIPE -->
+<section id="equipe" class="dark-section section-padding">
+  <div class="container text-center">
+
+    <span class="section-subtitle">EQUIPE</span>
+    <h2 class="section-title text-white">Desenvolvedores do Projeto</h2>
+    <p class="text-secondary mt-3 mb-5">Engenharia da Computação — UNIFEV</p>
+
+    <div class="row mt-2 g-4 justify-content-center">
+
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar">KK</div>
+          <h5>Kawan Kiyoshi</h5>
+          <span class="team-role">Desenvolvedor - Cartilha</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar">AD</div>
+          <h5>Arthur Daniel</h5>
+          <span class="team-role">Desenvolvedor - Cartilha</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar">MW</div>
+          <h5>Maxwell Welington</h5>
+          <span class="team-role">Desenvolvedor - site</span>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6">
+        <div class="team-card">
+          <div class="team-avatar">LG</div>
+          <h5>Luciano Gabriel</h5>
+          <span class="team-role">Desenvolvedor - Cartilha</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mt-5 orientador-box">
+      <p class="text-secondary mb-1">Orientador</p>
+      <h5 class="text-white">Me. Fernando Datorre</h5>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container text-center">
+
+    <h4>Cartilha de Cibersegurança na Terceira Idade</h4>
+
+    <p class="mt-3">Engenharia da Computação • UNIFEV</p>
+
+    <p>Orientador: Me. Fernando Datorre</p>
+
+    <div class="social-icons mt-4">
+      <i class="bi bi-instagram"></i>
+      <i class="bi bi-linkedin"></i>
+      <i class="bi bi-github"></i>
+    </div>
+
+    <p class="copyright mt-4">
+      © 2026 - Projeto Integrado UNIFEV
+    </p>
+
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
